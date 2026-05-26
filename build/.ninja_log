@@ -1,0 +1,17 @@
+# ninja log v7
+36	5074	8015302276534314	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+696	925	8015304102438708	mom_solver.exe	afb3f722b537fba4
+39	722	8015302276564333	CMakeFiles/mom_solver.dir/src/excitation.cpp.obj	27e6baa2319e3e6
+42	761	8015302276589359	CMakeFiles/mom_solver.dir/src/matrix_fill.cpp.obj	89f6b31404b322db
+34	695	8015304095823491	CMakeFiles/mom_solver.dir/src/io.cpp.obj	744f34101806dc5b
+37	4901	8015323712834563	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+4901	5149	8015323761483014	mom_solver.exe	afb3f722b537fba4
+39	5186	8015323934108406	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+5186	5438	8015323985582421	mom_solver.exe	afb3f722b537fba4
+54	780	8015348480748441	CMakeFiles/mom_solver.dir/src/excitation.cpp.obj	27e6baa2319e3e6
+51	5189	8015348480708400	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+5189	5460	8015348532085587	mom_solver.exe	afb3f722b537fba4
+39	4821	8015349077816122	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+4821	5046	8015349125641759	mom_solver.exe	afb3f722b537fba4
+42	4789	8015349555283240	CMakeFiles/mom_solver.dir/src/main.cpp.obj	a2a3295a33d82497
+4789	5011	8015349602759121	mom_solver.exe	afb3f722b537fba4

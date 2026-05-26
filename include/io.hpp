@@ -1,0 +1,14 @@
+#pragma once
+
+#include "dipole.hpp"
+#include <Eigen/Dense>
+#include <string>
+
+namespace mom {
+    void write_current_csv(const std::string& filename,
+                           const Dipole& d,
+                           const Eigen::VectorXcd& alpha);
+
+    void write_matrix_csv(const std::string& filename,
+                          const Eigen::MatrixXcd& M);
+}
