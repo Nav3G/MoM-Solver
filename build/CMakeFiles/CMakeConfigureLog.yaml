@@ -25086,3 +25086,1663 @@ events:
         - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/mom_solver"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-u9dje6"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-u9dje6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-u9dje6'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_4d838
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_4d838.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-u9dje6/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_4d838.dir/src.cxx.obj -o cmTC_4d838.exe -Wl,--out-implib,libcmTC_4d838.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-wj2fri"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-wj2fri"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-wj2fri'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_1f4a0
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_1f4a0.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-wj2fri/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_1f4a0.dir/src.cxx.obj -o cmTC_1f4a0.exe -Wl,--out-implib,libcmTC_1f4a0.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-e7xuvy"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-e7xuvy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-e7xuvy'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_9853b
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_9853b.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-e7xuvy/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_9853b.dir/src.cxx.obj -o cmTC_9853b.exe -Wl,--out-implib,libcmTC_9853b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-dta9qi"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-dta9qi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-dta9qi'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_37ab6
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_37ab6.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-dta9qi/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_37ab6.dir/src.cxx.obj -o cmTC_37ab6.exe -Wl,--out-implib,libcmTC_37ab6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-riet5f"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-riet5f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-riet5f'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_4bff4
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_4bff4.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-riet5f/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_4bff4.dir/src.cxx.obj -o cmTC_4bff4.exe -Wl,--out-implib,libcmTC_4bff4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-s08nsl"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-s08nsl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-s08nsl'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_9a42a
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_9a42a.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-s08nsl/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_9a42a.dir/src.cxx.obj -o cmTC_9a42a.exe -Wl,--out-implib,libcmTC_9a42a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-z1k862"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-z1k862"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-z1k862'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_25b0f
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_25b0f.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-z1k862/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_25b0f.dir/src.cxx.obj -o cmTC_25b0f.exe -Wl,--out-implib,libcmTC_25b0f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-sptjw4"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-sptjw4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-sptjw4'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_7e10a
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_7e10a.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-sptjw4/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_7e10a.dir/src.cxx.obj -o cmTC_7e10a.exe -Wl,--out-implib,libcmTC_7e10a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-92ceqw"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-92ceqw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-92ceqw'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_509ca
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_509ca.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-92ceqw/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_509ca.dir/src.cxx.obj -o cmTC_509ca.exe -Wl,--out-implib,libcmTC_509ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-0zghhy"
+      binary: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-0zghhy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-0zghhy'
+        
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_4a2d7
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe -DCOMPILER_SUPPORT_std=cpp03  -std=c++03 -o CMakeFiles/cmTC_4a2d7.dir/src.cxx.obj -c D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/CMakeScratch/TryCompile-0zghhy/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe   CMakeFiles/cmTC_4a2d7.dir/src.cxx.obj -o cmTC_4a2d7.exe -Wl,--out-implib,libcmTC_4a2d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/eigen-src/cmake/FindBLAS.cmake:432 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "build/_deps/eigen-src/cmake/FindLAPACK.cmake:139 (find_dependency)"
+      - "build/_deps/eigen-src/test/CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OMP_gomp_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gomp"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Evan/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/mom_solver/lib/"
+      - "C:/Program Files (x86)/mom_solver/"
+      - "C:/Program Files (x86)/mom_solver/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/"
+      - "C:/msys64/ucrt64/lib/gcc/"
+      - "C:/msys64/ucrt64/x86_64-w64-mingw32/lib/"
+    found: "C:/msys64/ucrt64/lib/libgomp.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/mom_solver/bin"
+        - "C:/msys64/ucrt64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindCUDA.cmake:841 (find_program)"
+      - "build/_deps/eigen-src/unsupported/test/CMakeLists.txt:293 (find_package)"
+    mode: "program"
+    variable: "CUDA_TOOLKIT_ROOT_DIR_NVCC"
+    description: "Toolkit location."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:/WINDOWS/system32"
+        - "C:\\WINDOWS"
+        - "C:/WINDOWS/System32/Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:/WINDOWS/System32/OpenSSH/"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:/Program Files/dotnet/"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Python314/Scripts/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:/Users/Evan/AppData/Local/Programs/Python/Launcher/"
+        - "C:\\Users\\Evan\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:/Users/Evan/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "C:\\msys64\\ucrt64\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/mom_solver"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/ucrt64"
+        - "C:/Program Files (x86)/mom_solver"
+...

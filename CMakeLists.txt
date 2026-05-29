@@ -13,6 +13,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(eigen)
 
-add_executable(mom_solver src/main.cpp src/excitation.cpp src/matrix_fill.cpp src/io.cpp)
+add_executable(mom_solver src/main.cpp src/io.cpp src/geometry.cpp src/quadrature.cpp src/matrix_fill_v2.cpp src/excitation_v2.cpp)
 target_include_directories(mom_solver PRIVATE include)
 target_link_libraries(mom_solver PRIVATE Eigen3::Eigen)

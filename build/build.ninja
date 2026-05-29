@@ -58,27 +58,45 @@ build CMakeFiles/mom_solver.dir/src/main.cpp.obj: CXX_COMPILER__mom_solver_unsca
   OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
 
-build CMakeFiles/mom_solver.dir/src/excitation.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/excitation.cpp || cmake_object_order_depends_target_mom_solver
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\mom_solver.dir\src\excitation.cpp.obj.d
-  FLAGS = -g -std=c++17
-  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
-  OBJECT_DIR = CMakeFiles\mom_solver.dir
-  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
-  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
-
-build CMakeFiles/mom_solver.dir/src/matrix_fill.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/matrix_fill.cpp || cmake_object_order_depends_target_mom_solver
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles\mom_solver.dir\src\matrix_fill.cpp.obj.d
-  FLAGS = -g -std=c++17
-  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
-  OBJECT_DIR = CMakeFiles\mom_solver.dir
-  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
-  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
-
 build CMakeFiles/mom_solver.dir/src/io.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/io.cpp || cmake_object_order_depends_target_mom_solver
   CONFIG = Debug
   DEP_FILE = CMakeFiles\mom_solver.dir\src\io.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
+  OBJECT_DIR = CMakeFiles\mom_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
+
+build CMakeFiles/mom_solver.dir/src/geometry.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/geometry.cpp || cmake_object_order_depends_target_mom_solver
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\mom_solver.dir\src\geometry.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
+  OBJECT_DIR = CMakeFiles\mom_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
+
+build CMakeFiles/mom_solver.dir/src/quadrature.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/quadrature.cpp || cmake_object_order_depends_target_mom_solver
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\mom_solver.dir\src\quadrature.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
+  OBJECT_DIR = CMakeFiles\mom_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
+
+build CMakeFiles/mom_solver.dir/src/matrix_fill_v2.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/matrix_fill_v2.cpp || cmake_object_order_depends_target_mom_solver
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\mom_solver.dir\src\matrix_fill_v2.cpp.obj.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
+  OBJECT_DIR = CMakeFiles\mom_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles\mom_solver.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\mom_solver.dir
+
+build CMakeFiles/mom_solver.dir/src/excitation_v2.cpp.obj: CXX_COMPILER__mom_solver_unscanned_Debug D$:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/excitation_v2.cpp || cmake_object_order_depends_target_mom_solver
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\mom_solver.dir\src\excitation_v2.cpp.obj.d
   FLAGS = -g -std=c++17
   INCLUDES = -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src
   OBJECT_DIR = CMakeFiles\mom_solver.dir
@@ -93,7 +111,7 @@ build CMakeFiles/mom_solver.dir/src/io.cpp.obj: CXX_COMPILER__mom_solver_unscann
 #############################################
 # Link the executable mom_solver.exe
 
-build mom_solver.exe: CXX_EXECUTABLE_LINKER__mom_solver_Debug CMakeFiles/mom_solver.dir/src/main.cpp.obj CMakeFiles/mom_solver.dir/src/excitation.cpp.obj CMakeFiles/mom_solver.dir/src/matrix_fill.cpp.obj CMakeFiles/mom_solver.dir/src/io.cpp.obj
+build mom_solver.exe: CXX_EXECUTABLE_LINKER__mom_solver_Debug CMakeFiles/mom_solver.dir/src/main.cpp.obj CMakeFiles/mom_solver.dir/src/io.cpp.obj CMakeFiles/mom_solver.dir/src/geometry.cpp.obj CMakeFiles/mom_solver.dir/src/quadrature.cpp.obj CMakeFiles/mom_solver.dir/src/matrix_fill_v2.cpp.obj CMakeFiles/mom_solver.dir/src/excitation_v2.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

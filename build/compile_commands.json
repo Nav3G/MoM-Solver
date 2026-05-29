@@ -7,21 +7,33 @@
 },
 {
   "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\excitation.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\excitation.cpp",
-  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/excitation.cpp",
-  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/excitation.cpp.obj"
-},
-{
-  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\matrix_fill.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\matrix_fill.cpp",
-  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/matrix_fill.cpp",
-  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/matrix_fill.cpp.obj"
-},
-{
-  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\io.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\io.cpp",
   "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/io.cpp",
   "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/io.cpp.obj"
+},
+{
+  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\geometry.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\geometry.cpp",
+  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/geometry.cpp",
+  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/geometry.cpp.obj"
+},
+{
+  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\quadrature.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\quadrature.cpp",
+  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/quadrature.cpp",
+  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/quadrature.cpp.obj"
+},
+{
+  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\matrix_fill_v2.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\matrix_fill_v2.cpp",
+  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/matrix_fill_v2.cpp",
+  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/matrix_fill_v2.cpp.obj"
+},
+{
+  "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/include -ID:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/_deps/eigen-src -g -std=c++17 -o CMakeFiles\\mom_solver.dir\\src\\excitation_v2.cpp.obj -c D:\\Files\\Programming\\VSCode\\cpp\\Projects\\mom_solver\\src\\excitation_v2.cpp",
+  "file": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/src/excitation_v2.cpp",
+  "output": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build/CMakeFiles/mom_solver.dir/src/excitation_v2.cpp.obj"
 },
 {
   "directory": "D:/Files/Programming/VSCode/cpp/Projects/mom_solver/build",

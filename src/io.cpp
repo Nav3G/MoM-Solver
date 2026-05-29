@@ -6,7 +6,7 @@
 
 namespace mom {
     void write_current_csv(const std::string& filename,
-                           const Dipole& dipole,
+                           const Geometry& geom,
                            const Eigen::VectorXcd& alpha) {
         std::ofstream out(filename);
         if (!out) {
@@ -14,14 +14,14 @@ namespace mom {
         }
         out << std::setprecision(15);
         out << "z,Re_I,Im_I,abs_I\n";
-        for (int n = 0; n < dipole.N; ++n) {
-            auto a = alpha(n);
-            out << segment_center(dipole, n) << "," 
-                << a.real() << "," 
-                << a.imag() << "," 
-                << std::abs(a) 
-                << "\n";
-        }
+        for (int m = 0; m < num_rooftops(geom); ++m) {
+            auto a = alpha(m);
+            double z_anchor = geom.nodes[m + 1].z();
+            out << z_anchor << ","
+                << a.real() << ","
+                << a.imag() << ","
+                << std::abs(a) << "\n";
+        }        
     }
 
     void write_matrix_csv(const std::string& filename,

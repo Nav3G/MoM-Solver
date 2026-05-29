@@ -9,7 +9,7 @@ OUT = Path("output")
 OUT.mkdir(exist_ok=True)
 
 # Load
-df = pd.read_csv(BUILD / "I.csv")
+df = pd.read_csv(BUILD / "I_v2.csv")
 
 z = df["z"] / (3e8 / 300e6)
 
@@ -23,10 +23,10 @@ ax.legend()
 ax.grid(True, alpha=0.3)
 plt.tight_layout()
 
-plt.savefig(OUT / "I.png", dpi=200, bbox_inches="tight")
+plt.savefig(OUT / "I_v2.png", dpi=200, bbox_inches="tight")
 plt.close(fig)
 
-dz = pd.read_csv(BUILD / "Z.csv")
+dz = pd.read_csv(BUILD / "Z_v2.csv")
 
 Re_Z = dz.pivot(index="m", columns="n", values="Re_Z")
 Im_Z = dz.pivot(index="m", columns="n", values="Im_Z")
@@ -45,5 +45,5 @@ ax2.set_xlabel(r"$n$")
 ax2.set_ylabel(r"$m$")
 fig.colorbar(im2, ax=ax2)
 
-plt.savefig(OUT / "Z.png", dpi=200, bbox_inches="tight")
+plt.savefig(OUT / "Z_v2.png", dpi=200, bbox_inches="tight")
 plt.close(fig)

@@ -1,12 +1,13 @@
 #pragma once
 
-#include "dipole.hpp"
+#include "geometry.hpp"
+#include "basis.hpp"
 #include <Eigen/Dense>
 #include <string>
 
 namespace mom {
     void write_current_csv(const std::string& filename,
-                           const Dipole& d,
+                           const Geometry& geom,
                            const Eigen::VectorXcd& alpha);
 
     void write_matrix_csv(const std::string& filename,
