@@ -2,6 +2,8 @@
 #include "geometry.hpp"
 
 namespace mom {
+    enum class Ramp { Up, Down };
+
     // Number of rooftops on this geometry.
     inline int num_rooftops(const Geometry& geom) {
         return geom.num_segments() - 1;

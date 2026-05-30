@@ -1,4 +1,6 @@
 #include "geometry.hpp"
+#include "constants.hpp"
+#include <cmath>
 #include <cassert>
 
 namespace mom {
@@ -17,6 +19,48 @@ namespace mom {
         for (int i = 0; i <= N_s; ++i) {
             double z_i = -h + i * delta;
             g.nodes.emplace_back(0.0, 0.0, z_i);
+        }
+
+        // Per-segment data, derived from nodes.
+        g.positions.reserve(N_s);
+        g.tangents.reserve(N_s);
+        g.lengths.reserve(N_s);
+        for (int s = 0; s < N_s; ++s) {
+            Eigen::Vector3d edge = g.nodes[s + 1] - g.nodes[s];
+            double L = edge.norm();
+            g.lengths.emplace_back(L);
+
+            Eigen::Vector3d mid = 0.5 * (g.nodes[s] + g.nodes[s + 1]);
+            g.positions.emplace_back(mid);
+
+            g.tangents.emplace_back(edge / L);
+        }
+
+        return g;
+    }
+
+    Geometry make_v_dipole(double h, double a, int N_s, double half_angle_rad) {
+        assert(N_s % 2 == 0);
+        assert(h > 0);
+        assert(a > 0);
+        assert(half_angle_rad >= 0 && half_angle_rad < constants::pi / 2);
+
+        Geometry g;
+        g.a = a;
+
+        double delta = 2.0 * h / N_s;
+
+        // Node fill.
+        g.nodes.reserve(N_s + 1);
+        for (int i = 0; i <= N_s; ++i) {
+            double d = -(h - i*delta);
+            if (i < N_s / 2) {
+                g.nodes.emplace_back(d * std::sin(half_angle_rad), 0.0, 
+                                     d * std::cos(half_angle_rad));
+            } else {
+                g.nodes.emplace_back(d * std::sin(half_angle_rad), 0.0, 
+                                     -d * std::cos(half_angle_rad));
+            }
         }
 
         // Per-segment data, derived from nodes.

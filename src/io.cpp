@@ -1,5 +1,6 @@
 #include "io.hpp"
 #include <fstream>
+#include <vector>
 #include <iomanip>
 #include <complex>
 #include <stdexcept>
@@ -13,11 +14,21 @@ namespace mom {
             throw std::runtime_error("Failed to open " + filename);
         }
         out << std::setprecision(15);
-        out << "z,Re_I,Im_I,abs_I\n";
+        out << "s,Re_I,Im_I,abs_I\n";
+
+        // Cumulative arc length at each node.
+        int N_nodes = geom.num_nodes();
+        std::vector<double> arc(N_nodes, 0.0);
+        for (int s = 0; s < N_nodes - 1; ++s) {
+            arc[s + 1] = arc[s] + geom.lengths[s];
+        }
+
+        double total = arc[N_nodes - 1];
+
         for (int m = 0; m < num_rooftops(geom); ++m) {
             auto a = alpha(m);
-            double z_anchor = geom.nodes[m + 1].z();
-            out << z_anchor << ","
+            double s_anchor = arc[m + 1] - total / 2.0;
+            out << s_anchor << ","
                 << a.real() << ","
                 << a.imag() << ","
                 << std::abs(a) << "\n";

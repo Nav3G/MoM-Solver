@@ -10,38 +10,53 @@
 
 #include <Eigen/Dense>
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <complex>
+#include <cmath>
 
 int main() {
     using namespace mom;
 
-    // 1. Configure dipole (half-wave).
-    const double f = 300e6;
+    // Antenna parameters
+    const double f      = 300e6;
     const double lambda = constants::c / f;
-    const double h = 0.235 * lambda;
-    const double a = 0.005 * lambda;
-    const int N = 50;
+    const double h      = 0.235 * lambda;
+    const double a      = 0.005 * lambda;
+    const int    N_s    = 50;                          // even, so a node sits at the bend
+    const double alpha  = constants::pi / 3.0;         // 45 degree half-angle
 
-    Geometry dipole = make_straight_dipole(h, a, N);
-    auto params = SolverParams{f, (N - 1) / 2};
+    // Build V-dipole
+    Geometry v_dipole = make_v_dipole(h, a, N_s, alpha);
+
+    // Geometry sanity prints
+    std::cout << std::setprecision(6);
+    std::cout << "--- V-dipole geometry, alpha = " << alpha << " rad ---\n";
+    std::cout << "Lower tip:   " << v_dipole.nodes[0].transpose()       << "\n";
+    std::cout << "Bend node:   " << v_dipole.nodes[N_s / 2].transpose() << "\n";
+    std::cout << "Upper tip:   " << v_dipole.nodes[N_s].transpose()     << "\n";
+    std::cout << "Tangent dot across bend: "
+              << v_dipole.tangents[N_s / 2 - 1].dot(v_dipole.tangents[N_s / 2])
+              << "  (expected cos(2*alpha) = " << std::cos(2.0 * alpha) << ")\n\n";
+
+    // Solver setup
+    auto params = SolverParams{f, N_s / 2};            // feed_node at the bend
+    const int feed_rooftop = N_s / 2 - 1;              // rooftop anchored at the bend node
+    const int gl_order = 3;
 
     std::complex<double> V0 = {1.0, 0.0};
 
-    // -------------------- v2 path --------------------
-    const int feed_rooftop = 25; 
-    const int gl_order = 3;
+    // Assemble + solve
+    auto Z = fill_impedance_matrix_v2(v_dipole, params, gl_order);
+    auto v = delta_gap_v2(v_dipole, params, V0, feed_rooftop);
+    Eigen::VectorXcd alpha_vec = Z.colPivHouseholderQr().solve(v);
 
-    auto Z_v2 = fill_impedance_matrix_v2(dipole, params, gl_order);
-    auto v_v2 = delta_gap_v2(dipole, params, V0, feed_rooftop);
-    Eigen::VectorXcd alpha_v2 = Z_v2.colPivHouseholderQr().solve(v_v2);
+    auto Z_in = V0 / alpha_vec(feed_rooftop);
+    std::cout << "Z_in = " << Z_in.real() << " + j" << Z_in.imag() << " ohms\n";
 
-    auto Z_in_v2 = V0 / alpha_v2(feed_rooftop);
-    std::cout << "Z_in (v2) = " << Z_in_v2.real() << " + j" << Z_in_v2.imag() << " ohms\n";
-
-    write_matrix_csv("output/Z_v2.csv", Z_v2);
-    write_current_csv("output/I_v2.csv", dipole, alpha_v2);
+    // Outputs (note: write_current_csv writes z-coordinates only, which loses
+    // x-information for bent wires. For now you'll see a folded projection.)
+    write_matrix_csv("output/Z_v.csv",    Z);
+    write_current_csv("output/I_v.csv",   v_dipole, alpha_vec);
 
     return 0;
 }

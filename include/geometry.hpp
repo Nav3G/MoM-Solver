@@ -16,4 +16,6 @@ namespace mom {
     };
 
     Geometry make_straight_dipole(double h, double a, int N_s);
+
+    Geometry make_v_dipole(double h, double a, int N_s, double half_angle_rad);
 }
